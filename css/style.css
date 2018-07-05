@@ -1,0 +1,173 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #202020;
+  font-family: 'Lato', sans-serif;
+}
+
+header h1,
+header p {
+  text-align: center;
+}
+
+header h1 {
+  color: #ffffff;
+  font-size: 5rem;
+  margin: 20px 0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+header p {
+  font-size: 2.5rem;
+  color: #f79e11;
+  margin: 10px 0;
+}
+
+main {
+  width: 100%;
+  box-sizing: border-box;
+  height: calc(100vh - 120px);
+  padding: 20px;
+  padding-top: 0;
+}
+
+.game-window {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  background-color: #101010;
+  width: 100%;
+  max-width: 1000px;
+  height: calc(100% - 120px);
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.score,
+.best-score,
+.score-label,
+.best-score-label {
+  color: #f8ab22;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 3rem;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100px;
+}
+
+.best-score,
+.best-score-label {
+  top: 60px;
+  font-size: 2rem;
+}
+
+.best-score-label,
+.score-label {
+  right: 100px;
+  width: auto;
+  color: #bbbbbb;
+}
+
+.game-footer {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 5px solid #202020;
+}
+
+.game-speed-label {
+  color: #ffffff;
+  font-size: 3rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;  
+  left: 15px;
+  margin: auto;
+  height: 80%;
+}
+.game-speed-bar {
+  max-width: calc(100% - 120px);
+  min-width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 120px;
+  top: 0;
+  width: 500px;
+  background-color: #ff5500;
+}
+
+#letter {
+  font-family: monospace;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #f79a11;
+  font-size: 4rem;
+  position: absolute;
+  left: 0;
+  top: -100px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.page-footer {
+  height: 100px;
+  text-align: center;
+  color: #aaaaaa;
+  box-sizing: border-box;
+  padding: 20px;
+  font-size: 1.4rem;
+}
+
+.page-footer a {
+  color: #f79a11;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.game-over {
+  text-align: center;
+}
+
+.game-over h2,
+.game-over p {
+  color: #ffffff;
+}
+
+.game-over h2 {
+  font-size: 4rem;
+  margin: 30px 0;
+  margin-top: 100px;
+}
+
+.game-over p {
+  margin: 10px 0;
+  font-size: 2rem;
+}
+
+.game-over .play-again-btn {
+  width: 200px;
+  height: 50px;
+  font-size: 3rem;
+  margin-top: 200px;
+  cursor: pointer;
+  border-radius: 10px;
+  
+  transition: color .3s;
+}
+
+.game-over .play-again-btn:hover {
+  color: #e68900;
+}

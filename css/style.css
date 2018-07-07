@@ -34,7 +34,7 @@ header p {
 main {
   width: 100%;
   box-sizing: border-box;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 12rem);
   padding: 20px;
   padding-top: 0;
 }
@@ -61,20 +61,20 @@ main {
   right: 0;
   top: 0;
   font-size: 3rem;
-  padding: 10px;
+  padding: 1rem;
   box-sizing: border-box;
-  width: 100px;
+  width: 10rem;
 }
 
 .best-score,
 .best-score-label {
-  top: 60px;
+  top: 6rem;
   font-size: 2rem;
 }
 
 .best-score-label,
 .score-label {
-  right: 100px;
+  right: 10rem;
   width: auto;
   color: #bbbbbb;
 }
@@ -127,7 +127,7 @@ main {
   text-align: center;
   color: #aaaaaa;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 2rem;
   font-size: 1.4rem;
 }
 
@@ -148,26 +148,44 @@ main {
 
 .game-over h2 {
   font-size: 4rem;
-  margin: 30px 0;
-  margin-top: 100px;
+  margin: 3rem 0;
+  margin-top: 10rem;
 }
 
 .game-over p {
-  margin: 10px 0;
+  margin: 1rem 0;
   font-size: 2rem;
 }
 
 .game-over .play-again-btn {
-  width: 200px;
-  height: 50px;
+  width: 20rem;
+  height: 5rem;
   font-size: 3rem;
-  margin-top: 200px;
+  margin-top: 20rem;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 1rem;
   
   transition: color .3s;
 }
 
 .game-over .play-again-btn:hover {
   color: #e68900;
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 8px;
+  }
+  .page-footer {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 6px;
+  }
+  .page-footer {
+    font-size: 2rem;
+  }
 }

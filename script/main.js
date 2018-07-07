@@ -30,6 +30,9 @@ function setup() {
   badSound = new Audio("sounds/bad.wav");
   randLetter();
   setContent();
+  document.getElementById("letter").addEventListener("click", function() {
+    newLetter();
+  }, false);
   update();
 }
 
@@ -85,22 +88,26 @@ function gameOver() {
   }, false);
 }
 
+function newLetter() {
+  goodSound.play();
+  randLetter();
+  speed += 10;
+  score += 10;
+  if(score > bestScore) {
+    bestScore = score;
+  }
+  if(speed > maxSpeed) {
+    speed = maxSpeed;
+  }
+  setContent();
+}
+
 window.addEventListener("keydown", function(e) {
   var code = e.keyCode;
   if(code < 65 || code > 90) return;
   
   if(currentLetter.getCode() === code) {
-    goodSound.play();
-    randLetter();
-    speed += 10;
-    score += 10;
-    if(score > bestScore) {
-      bestScore = score;
-    }
-    if(speed > maxSpeed) {
-      speed = maxSpeed;
-    }
-    setContent();
+    newLetter();
   }else {
     badSound.play();
   }

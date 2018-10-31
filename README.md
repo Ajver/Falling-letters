@@ -18,7 +18,7 @@ After each corect clicks, Your score will increase by 10 points.
 
 # For mobile users
 
-You are using phone with out keybord? It's no problem!
+You are using phone without keybord? It's no problem!
 You can just click the falling letter with Your finger. It's more difficult, but works.
 
 # Progress
